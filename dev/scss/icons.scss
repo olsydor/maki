@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+ 	}
+.icon {
+    background: url('/images/sprite.png') no-repeat;
+    display: inline-block;
+} 
+.icon-maki-logo { background-position: -1px -0px; width: 185px; height: 55px; }
+.icon-web-money { background-position: -1px -56px; width: 141px; height: 41px; }
+.icon-visa { background-position: -1px -98px; width: 122px; height: 40px; }
+.icon-qiwi { background-position: -1px -139px; width: 103px; height: 47px; }
+.icon-yandex-money { background-position: -1px -187px; width: 99px; height: 38px; }
+.icon-calendar { background-position: -143px -56px; width: 34px; height: 32px; }
+.icon-clock { background-position: -143px -89px; width: 34px; height: 32px; }
+.icon-location { background-position: -124px -122px; width: 34px; height: 32px; }
+.icon-car { background-position: -105px -155px; width: 28px; height: 19px; }
+.icon-moon { background-position: -159px -122px; width: 26px; height: 26px; }
+.icon-settings { background-position: -159px -149px; width: 21px; height: 17px; }
+.icon-plus { background-position: -134px -155px; width: 20px; height: 20px; }
+.icon-search { background-position: -155px -167px; width: 20px; height: 20px; }
+.icon-subtract { background-position: -105px -175px; width: 20px; height: 20px; }
+.icon-chekbox { background-position: -126px -176px; width: 19px; height: 19px; }
+.icon-chekbox-cheked { background-position: -146px -188px; width: 19px; height: 19px; }
+.icon-basket { background-position: -124px -98px; width: 17px; height: 16px; }
+.icon-envelope { background-position: -105px -139px; width: 16px; height: 11px; }
+.icon-phone-white { background-position: -166px -188px; width: 15px; height: 15px; }
+.icon-phone-black { background-position: -101px -196px; width: 14px; height: 17px; }
