@@ -2,4 +2,14 @@ html
 	head
 		include ./parts/head.pug
 	body
-		h1 Test
+		.wrapper
+			.clearfix
+				.col-laptop-3-4
+					include ./parts/flowers.pug
+				.col-laptop-1-4
+					//Тут має бути фільтр
+			.title Новости
+				span.pull_right
+					a.all_news(href="#")
+						|Все новости	
+					
