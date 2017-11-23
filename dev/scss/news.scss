@@ -2,7 +2,6 @@
     text-decoration: none;
     border: 1px solid #ffffff;
     font-size: 15px;
-    
 	text-transform: uppercase;
 	display:inline-block;
 	color:#333;
@@ -15,6 +14,7 @@
     background: transparent;
     color:#fff;
     transition: opacity .3s;
+    background: rgba(255, 0, 0, 0.5);
 }
 .news_img:hover {
     opacity: 0.5;
@@ -34,8 +34,4 @@
 .news_img{
 max-width:100%;
 position: relative;
-}
-a span {
-	padding-bottom: 13px;
-
 }
