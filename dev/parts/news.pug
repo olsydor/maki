@@ -2,25 +2,38 @@ html
 	head
 
 	body
-		.clerfix
-			.col-laptop-1-3
-				.news_img
-					img(src="../images/couple.jpg", alt="couple")
-					a.btn.btn_news(href="#")
-						| Читать ...
-				.news_date| 01.01.16	
-				.news_article_title| С Новим годом 2016!
-			.col-laptop-1-3
-				.news_img
-					img(src="../images/christmas_decoration.jpg", alt="christmas decoration")
-					a.btn.btn_news(href="#")
-						| Читать ...
-				.news_date| 01.01.16
-				.news_article_title| Как украсить дом к Новому году!
-			.col-laptop-1-3
-				.news_img
-					img(src="../images/news_gift.jpg", alt="NY Gift")
-					a.btn.btn_news(href="#") 
-						| Читать ...
-				.news_date| 01.01.16
-				.news_article_title| Розыгрыш новогоднего подарка
+		.news
+			.row.clearfix.news-center
+				.col-laptop-1-3
+					.article
+						a(href="#").article__pic
+							img(src="../images/couple.jpg", alt="couple")
+							.pic__within
+								.btn.btn_news
+									|Читать...
+						a(href="#").article__pub-date
+							|01.01.16
+						a(href="#").article__title
+							|С Новым годом 2016!
+				.col-laptop-1-3
+					.article
+						a(href="#").article__pic
+							img(src="../images/christmas_decoration.jpg", alt="christmas decoration")
+							.pic__within
+								.btn.btn_news
+									|Читать...
+						a(href="#").article__pub-date
+							|01.01.16
+						a(href="#").article__title
+							|Как украсить дом к Новому году?
+				.col-laptop-1-3
+					.article
+						a(href="#").article__pic
+							img(src="../images/news_gift.jpg", alt="NY Gift")
+							.pic__within
+								.btn.btn_news
+									|Читать...
+						a(href="#").article__pub-date
+							|01.01.16
+						a(href="#").article__title
+							|Розыгрыш новогоднего подарка
