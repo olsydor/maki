@@ -49,6 +49,9 @@
 	.pad10{
 		padding:0 10px;
 	}
+	.header{
+		text-align: left;
+	}
 	.product{
 		padding-bottom: 30px;
 	    border-bottom: 1px solid #f0f0f0;
@@ -91,6 +94,39 @@
 				}
 			}
 		}
+	}
+	.header{
+		height:509px;
+	}	
+	.contact_container{
+		padding-top:10px;
+	}
+	.assortment{
+		top: 220px;
+		margin:0;
+		padding:15px 0 17px;
+	&:after{
+		content: '';
+	    background: rgba(255, 255, 255, 0.6);
+	    height: 167px;
+	    width: 1000px;
+	    position: absolute;
+	    top: 0;
+	    left: -1000px;
+
+	}
+	&:before{
+	    content: '';
+	    background: rgba(255, 255, 255, 0.6);
+	    height: 167px;
+	    width: 1000px;
+	    position: absolute;
+	    top: 0;
+	    left: 100%;
+	}
+	}
+	.assortment__container{
+		padding: 0px 20px;
 	}
 	.menu_lsit{
 		display:block;
@@ -144,6 +180,9 @@
 	}	
 	.contact_container{
 		text-align:center;
+	}
+	.assortment__container{
+		padding: 0px 35px;
 	}
 	.product{
 		padding-bottom: 0px;
