@@ -304,17 +304,20 @@ img{
 	cursor:pointer;
 	margin:0 3px 5px 3px;
 }
+.pull-right{
+	float: right;
+}
 .title{
 	font-size: 23px;
 
-a.pull-right{
+	a{
 		color:#7b7b7b;
 		font-size:13px;
 		text-decoration:underline;
 		padding-right:10px;
-		float: right;
+		
 	}
-	}
+}
 .all_news{
 	color:#7b7b7b;
 	font-size: 13px;
