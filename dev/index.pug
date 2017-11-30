@@ -10,10 +10,9 @@ html
 				.col-phablet-1-2.col-tablet-1-3.col-laptop-1-4.pad10
 					//Тут має бути фільтр
 			.title Новости
-				span.pull_right
-					a.all_news(href="#")
-						|Все новости
-		include js/main.js				
+				a(href="#").pull-right Все новости
+			include ./parts/news.pug
+  	include js/main.js				
 		span.icon.icon-maki-logo
 		span.icon.icon-web-money
 		span.icon.icon-visa
