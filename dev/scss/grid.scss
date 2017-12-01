@@ -192,8 +192,11 @@
 	    	margin: 0 -10px;
 	    }
 	}
-	.stiker_action, .stiker_new, .stiker_hit{
+	.stiker_action, .stiker_new{
 		top:0;
+	}
+	.stiker__container{
+		top:5px;
 	}
 	.product__title{
 		height:40px;
