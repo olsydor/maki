@@ -363,14 +363,15 @@ img{
 }
 .title{
 	font-size: 23px;
-	a{
-		color:#7b7b7b;
+}
+.title-i-b{
+	display: inline-block;
+}
+.all-news {
+	color:#7b7b7b;
 		font-size:13px;
 		text-decoration:underline;
 		padding-right:10px;
-	}
-}
-.all_news{
-	color:#7b7b7b;
-	font-size: 13px;
+		margin-top: 15px;
+
 }
