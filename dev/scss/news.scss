@@ -41,11 +41,12 @@
 		text-align:left;
 		display:block;
 		color: #999999;
-		text-decoration: none
+		text-decoration: none;
 	}
 	&__pic{
 		display:inline-block;
 		position: relative;
+		margin-bottom: 20px;
 		img {
 			opacity: 1;
 			display: block;
