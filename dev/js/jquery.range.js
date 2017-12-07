@@ -31,7 +31,7 @@
       onbarclicked: function() {},
 			isRange: false,
 			showLabels: true,
-			showScale: true,
+			showScale: false,
 			step: 1,
 			format: '%s',
 			theme: 'theme-green',

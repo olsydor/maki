@@ -9,11 +9,12 @@
 	text-transform: uppercase;
 	color: #999999;
 	margin-bottom: 30px;
+	display: inline-block;
 	&:hover{
 		background: linear-gradient(to bottom, rgba(255,170,170,1) 0%,rgba(255,153,153,1) 100%);
 		color:#fff;
-		border:1px solid #ff9999;
-		padding:13px 16px ;
+		border: none;
+		padding:14px 17px 13px ;
 	}
 }
 i.fa.fa-sliders.fa.fa-lg{
@@ -30,6 +31,9 @@ i.fa.fa-sliders.fa.fa-lg{
 	font-weight: bold;
 	font-size: 15px;
 	margin-bottom: 10px;
+}
+.slider-container{
+	margin: 20px 0 50px 0;
 }
 // Form edit
 input[type=checkbox] {

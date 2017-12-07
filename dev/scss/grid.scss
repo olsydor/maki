@@ -38,6 +38,16 @@
 	.article {
 		margin-bottom: 45px;
 	}
+	.btn_filter{
+		padding: 13px 0;
+    	display: block;
+    	text-align: center;
+		&:hover{
+			border: none;
+			padding: 13px 0;
+			display: block;
+		}
+}
 }
 @include breakpoint(phablet){
 	.col-phablet-{
@@ -62,7 +72,16 @@
 	.article {
 		margin-bottom: 45px;
 	}
-}	
+	.btn_filter{
+		padding:13px 16px 12px;
+		display: inline-block;
+		&:hover{
+			border: none;
+			padding:14px 17px 13px;
+			display: inline-block;
+		}
+	}
+}
 @include breakpoint(tablet){
 	.col-tablet-{
 		&1-2{
@@ -134,7 +153,7 @@
 	.assortment__container{
 		padding: 0px 20px;
 	}
-	.menu_lsit{
+	.menu__list{
 		display:block;
 	}
 	.menu__btn{
@@ -148,6 +167,15 @@
 	}
 	.product__price{
 		padding:5px 0 15px 0;
+	}
+	.btn_filter{
+		padding:13px 16px 12px;
+		display: inline-block;
+		&:hover{
+			border: none;
+			padding:14px 17px 13px;
+			display: inline-block;
+		}
 	}
 }
 @include breakpoint(laptop){
