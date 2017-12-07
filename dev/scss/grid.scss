@@ -35,6 +35,9 @@
 		padding-bottom: 30px;
 	    border-bottom: 1px solid #f0f0f0;
 	}
+	.article {
+		margin-bottom: 45px;
+	}
 }
 @include breakpoint(phablet){
 	.col-phablet-{
@@ -55,6 +58,9 @@
 	.product{
 		padding-bottom: 30px;
 	    border-bottom: 1px solid #f0f0f0;
+	}
+	.article {
+		margin-bottom: 45px;
 	}
 }	
 @include breakpoint(tablet){
