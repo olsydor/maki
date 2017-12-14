@@ -176,6 +176,11 @@
 			display: inline-block;
 		}
 	}
+	.interesting_products{
+		.product__price{
+			padding:15px 0;
+		}
+	}
 }
 @include breakpoint(laptop){
 	.col-laptop-{
@@ -236,5 +241,13 @@
 	}
 	.product__price{
 		padding:5px 0 15px 0;
+	}
+	.order__btn{
+		float:right;
+		margin-top:0px;
+		display:inline-block;
+	}
+	.order__container{
+		float:left;
 	}
 }
