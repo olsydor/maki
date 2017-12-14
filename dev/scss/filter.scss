@@ -95,22 +95,24 @@ label span{
 	font-size: 15px;
 	display: inline-block;
 }
-ul {
- 	display: inline-block;
-	list-style-type: none;
-}
-ul:nth-of-type(1) {
-	margin-right: 50px;
-}
-ul:nth-of-type(2) {
-	margin-bottom: 50px;
-}
-ul:nth-of-type(3) {
-	margin-right: 50px;
-}
-ul:nth-of-type(4) {
-	margin-bottom: 50px;
-}
-.unit_title:nth-of-type(4) {
-	margin-bottom: 15px;
+.filter{
+	ul {
+	 	display: inline-block;
+		list-style-type: none;
+	}
+	ul:nth-of-type(1) {
+		margin-right: 50px;
+	}
+	ul:nth-of-type(2) {
+		margin-bottom: 50px;
+	}
+	ul:nth-of-type(3) {
+		margin-right: 50px;
+	}
+	ul:nth-of-type(4) {
+		margin-bottom: 50px;
+	}
+	.unit_title:nth-of-type(4) {
+		margin-bottom: 15px;
+	}
 }

@@ -6,7 +6,30 @@ html
 		.wrapper
 			.clearfix
 				.col-phablet-1-2
-					//include ./parts/products.pug
+					ul.imageGallery
+						li(data-thumb="images/thumb/description_slider_thumbnail.jpg", data-src="images/description_slider.jpg" )
+							img(src="images/description_slider.jpg")
+						li(data-thumb="images/thumb/description_slider_1thumbnail.jpg", data-src="images/description_slider_1.jpg")
+							img(src="images/description_slider_1.jpg")
+						li(data-thumb="images/thumb/description_slider_3thumbnail.jpg", data-src="images/description_slider_3.jpg")
+							img(src="images/description_slider_3.jpg")
+						li(data-thumb="images/thumb/description_slider_2thumbnail.jpg", data-src="images/description_slider_2.jpg")
+							img(src="images/description_slider_2.jpg")
+					.testimonials
+						.unit_title Отзывы покупателей
+							.unit_title.pull-right 2 отзыва
+						.pub-date 01.01.16
+						.grey_title Михаил Святославович
+							.rating
+						.grey_box Канна. Название интересное, цветок тропический. В диком виде в нашей стране она не произростает, а вон на клумбах нашых городов часто можно встретить Канну причем в основном  красных оттенков почему то. На самом деле Канна ...
+						.pub-date 01.01.16
+						.grey_title Светлана Алексеева
+							.rating
+						.grey_box Быстрая доставка. Сервис на уровне. Спасибо большое!!!
+						.unit_title Написать отзыв:
+							.rating
+						input(type="text" id="testimonials_edit")
+						input(type="submit")
 				.col-phablet-1-2
 					//include ./parts/filter.pug
 			.clients
