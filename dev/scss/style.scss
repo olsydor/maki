@@ -378,14 +378,31 @@ img{
 	margin-bottom: 70px;
 }
 .clients__slider{
-	margin:15px 0px 30px;
+	margin:15px 60px 30px;
 	position: relative;
-	.lSSlideWrapper{
-		padding:0 70px;
-	}
 	li{
-		width:100px;
+		text-align: center;
 	}
+}
+.slider-arrow_prev, .slider-arrow_next{
+	height:53px;
+	width:28px;
+	background: url("../images/arrows.png") no-repeat;
+	background-position: 0 0;
+	position: absolute;
+	top:25px;
+	opacity:0.5;
+	transition: opacity 0.35s linear 0s;
+	&:hover{
+		opacity:1;
+	}
+}
+.slider-arrow_prev{
+	left:-60px;
+}
+.slider-arrow_next{
+	background-position: -32px 0;
+	right:-60px;
 }
 .interesting_products{
 	margin-bottom: 70px;

@@ -17,12 +17,13 @@ $('.range-slider').jRange({
 		isRange : true
 		}).jRange('setValue', '1000,5000');
 $(document).ready(function() {
-    $(".lightSlider_clients").lightSlider({
-         item:6,
+   var slider = $(".lightSlider_clients").lightSlider({
+        item:6,
         loop:false,
         slideMove:3,
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
         speed:500,
+        controls:false,
         responsive : [
             {
                 breakpoint:820,
@@ -40,15 +41,24 @@ $(document).ready(function() {
                   }
             },
             {
-                breakpoint:400,
+                breakpoint:450,
                 settings: {
                     item:2,
                     slideMove:1
                   }
             }
-        ]
+        ] 
+    });
+
+    $('.slider-arrow_prev').on('click', function (e) {
+        slider.goToPrevSlide();
+        e.preventDefault();
+    });
+    $('.slider-arrow_next').on('click', function (e) {
+        e.preventDefault();
+        slider.goToNextSlide();
     });  
-  });
+});
 $(document).ready(function() {
     $("#lightSlider_products").lightSlider({
         item:4,
