@@ -4,8 +4,8 @@ html
 	body
 		include ./parts/header.pug
 		.wrapper
-			.clearfix
-				.col-phablet-1-2
+			.clearfix.row16
+				.col-phablet-1-2.pad16
 					ul.imageGallery
 						li(data-thumb="images/thumb/description_slider_thumbnail.jpg", data-src="images/description_slider.jpg" )
 							img(src="images/description_slider.jpg")
@@ -15,27 +15,57 @@ html
 							img(src="images/description_slider_3.jpg")
 						li(data-thumb="images/thumb/description_slider_2thumbnail.jpg", data-src="images/description_slider_2.jpg")
 							img(src="images/description_slider_2.jpg")
-					.testimonials
-						.unit_title Отзывы покупателей
+					.comments
+						.unit_title  Отзывы покупателей
 							.unit_title.pull-right 2 отзыва
 						.pub-date 01.01.16
-						.grey_title Михаил Святославович
+						.grey_title  Михаил Святославович
 							.rating
-						.grey_box Канна. Название интересное, цветок тропический. В диком виде в нашей стране она не произростает, а вон на клумбах нашых городов часто можно встретить Канну причем в основном  красных оттенков почему то. На самом деле Канна ...
+						.grey_box 
+							span Канна. Название интересное, цветок тропический. В диком виде в нашей стране она не произростает, а вон на клумбах нашых городов часто можно встретить Канну причем в основном  красных оттенков почему то. На самом деле Канна ...
 						.pub-date 01.01.16
 						.grey_title Светлана Алексеева
 							.rating
-						.grey_box Быстрая доставка. Сервис на уровне. Спасибо большое!!!
-						.unit_title Написать отзыв:
+						.grey_box 
+							span Быстрая доставка. Сервис на уровне. Спасибо большое!!!
+						.unit_title 
+							span Написать отзыв:
 							.rating
-						input(type="text" id="testimonials_edit")
-						input(type="submit")
-				.col-phablet-1-2
-					//include ./parts/filter.pug
+						input(type="text" id="comments_edit")
+						.button_center
+							input(type="submit" value="Отправить" id="send_comment")
+				.col-phablet-1-2.pad16
+					.title.fz34 Нежный букет из роз
+					.order
+						.clearfix
+							.order__container
+								.order__price 2 350 руб.
+								.order__count
+									|Количество
+									.order__counter
+										a(href="#")
+											span.icon.icon-subtract 
+										|#[span.order__counter-number 1] 
+										a(href="#")
+											span.icon.icon-plus
+							.order__btn
+								a(href="#")
+									|заказать
+						.order__text
+							|При заказе букета вы получите 3% бонусов или 90 рублей.#[br] Вы их можете использовать при следующем заказе.
+					.discription
+						.discription__title Доставка
+						.discription__text
+							|#[span.icon.icon-car] С 9.00 до 24.00 - #[span.bold 500 руб.]#[br]#[span.icon.icon-moon] Доставка в ночное время - #[sapn.bold 700 руб.]
+					.discription
+						.discription__title Описание буклета
+						.discription__text
+							|Шикарный букет из 24 крупных роз с легко читаемым подтекстом. В этой композиции 24 алых цветка и всего лишь один бутон белоснежный. Сам букет собран в форме сердца, огромного страстного сердца в котором живет всего одна, единственная, непохожая ни на кого, роза. Букет «Только ты» – отличный выбор для первого признания или предложения руки и сердца. Он так же может стать той самой «оливковой ветвью» мира при ссоре – перед искренностью такого признания не устоит ни одно женское сердце. Роскошный букет алых роз будет отличным подарком и самым романтичным признанием в любви. 
+
 			.clients
 				.title Наши клиенты	
 				.clients__slider
-					ul#lightSlider_clients
+					ul.lightSlider_clients
 						li
 							a(href="#")
 								img(src="images/partner1.jpg", alt="Partner")
