@@ -92,3 +92,28 @@ $(document).ready(function() {
         ]
     });  
   });
+
+
+var howMany = 1;
+$("#order_more1").click(function(){
+    howMany += 1;
+    $("#order_counter1").text(howMany);
+    $("#order_sum1").text(howMany*2450 + " руб.");
+});
+$("#order_less1").click(function(){
+    howMany -= 1;
+    $("#order_counter1").text(howMany);
+    $("#order_sum1").text(howMany*2450 + " руб.");
+});
+
+var howMany2 = 1;
+$("#order_more2").click(function(){
+    howMany2 += 1;
+    $("#order_counter2").text(howMany2);
+    $("#order_sum2").text(howMany2*1200 + " руб.");
+});
+$("#order_less2").click(function(){
+    howMany2 -= 1;
+    $("#order_counter2").text(howMany2);
+    $("#order_sum2").text(howMany2*1200 + " руб.");
+});

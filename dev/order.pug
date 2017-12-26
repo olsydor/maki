@@ -1,0 +1,46 @@
+html
+	head
+		include ./parts/head.pug
+	body
+		include ./parts/header.pug
+		.wrapper
+			ol
+				li
+					.title Ваш заказ
+					.table
+						.table__row.clearfix
+							.table__col Наименование
+							.table__col Цена &#8381;
+							.table__col Количество
+							.table__col Сумма &#8381;
+						.table__row.clearfix
+							.table__col.ver-aline
+								a(href="#")
+									img(src="../images/order_roses.jpg", alt="")
+								a(href="") Нежный букет из роз
+							.table__col.ver-aline 2 450 руб.
+							.table__col.ver-aline
+								a(href="#")
+									span#order_less1.icon.icon-subtract 
+								span#order_counter1.order__counter-number 1
+								a(href="#")
+									span#order_more1.icon.icon-plus
+							.table__col.ver-aline#order_sum1 2 450 руб.
+						.table__row.clearfix
+							.table__col.ver-aline
+								a(href="#")
+									img(src="../images/bouquets.png", alt="")
+								a(href="") Нежный букет из роз
+							.table__col.ver-aline 1 200 руб.
+							.table__col.ver-aline
+								a(href="#")
+									span#order_less2.icon.icon-subtract 
+								span#order_counter2.order__counter-number 1
+								a(href="#")
+									span#order_more2.icon.icon-plus
+							.table__col.ver-aline#order_sum2 1 200 руб.
+						.table__sum.clearfix
+							span.order_sum#order_total 3 650 руб. 
+							span Сумма:	
+
+		script(src="js/main.js")
