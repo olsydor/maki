@@ -83,6 +83,7 @@ img{
 	color:#333;
 	width:70%;
 	border:1px solid #ffa8a8;
+	border-right:none;
 	padding: 0 10px;
 	display:none;
 	&:focus {
@@ -502,13 +503,45 @@ img{
 .icon.icon-moon{
 	top:6px;
 }
-ol{
-	li{
-		padding-left:30px;
+.list{
+	counter-reset: list ;	
+}
+.list__container{
+	padding-left:50px;
+	margin-bottom:13px;
+	position:relative;
+	padding-bottom: 1px;
+  	&:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 40px;
+    left: 10px;
+    width: 9px;
+    background: repeating-linear-gradient(-30deg, #d7d7d7, #d7d7d7 2px, transparent 3px, transparent 10px);
+}
+  &:before{
+    content:counter(list); 
+    counter-increment: list;
+    position:absolute;
+    color:#d7d7d7;
+    top:0;
+    left:0;
+    border-radius:50%;
+    border: 3px solid #d7d7d7;
+    width:25px;
+    height:25px;
+    text-align:center;
+    line-height: 25px;
+  }
+}
+.list__container:last-child{
+	&:after{
+		display:none;
 	}
 }
 .table{
-	margin:30px 0 55px 0px;
+	margin:30px 0 37px 0px;
 	padding:30px 30px 40px 30px;
 	box-shadow: 0px 0px 55px 20px #f4f4f4;
 	.table__row:first-child{
@@ -536,7 +569,7 @@ ol{
 		}
 		.table__col:nth-child(1){
 			width:55%;
-			a{
+			a:nth-child(2){
 				font-size: 15px;
 				color:#333;
 				margin-left:40px;
@@ -552,6 +585,9 @@ ol{
 			width:13%;
 		}
 	}
+}
+.icon-plus, .icon-subtract{
+	cursor: pointer;
 }
 .table__sum{
 	font-size: 19px;
@@ -574,5 +610,142 @@ ol{
 		content:'';
 		height:100%;
 		vertical-align:middle;
+	}
+}
+.grey_box{
+	margin:20px 0 35px 0;
+	background-color: #f7f7f7;
+	padding:15px 0 15px 25px;
+	font-size: 15px;
+	input {
+		vertical-align: top;
+		width: 17px;
+		height: 17px;
+		margin: 0 3px 0 0;
+	}
+	input + label {
+	  cursor: pointer;
+	}
+	input:not(checked) {
+	  position: absolute;
+	  opacity: 0;
+	}
+	input:not(checked) + label {
+		position: relative;
+		padding: 0 0 0 35px;
+	}
+	input:not(checked) + label:before {
+	  	content: '';
+	  	position: absolute;
+		top: 0px;
+		left: 0;
+		width: 17px;
+		height: 17px;
+		border: 2px solid #cccccc;
+		background: #ffffff;
+		background: linear-gradient(to bottom, #ffffff 0%, #cccccc 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 );
+	}
+	input:not(checked) + label:after {
+	 	opacity: 0;
+		content: '';
+		position: absolute;
+		width: 8px;
+		height: 3px;
+		background: transparent;
+		top: 7px;
+		left: 6px;
+		border: 1px solid #ff9999;
+		border-top: none;
+		border-right: none;
+		transform: rotate(-45deg);
+	}
+	input:hover + label:after {
+		opacity: 0.5;
+	}
+	input:checked + label:after {
+		opacity: 1;
+	}
+	label{
+		margin-right:40px;
+	}
+	.radio_delivery:checked + label{
+		font-weight: bold;
+		margin-right:30px;
+	}
+	.radio_money:checked + label{
+		font-weight: bold;
+		margin-right:31px;
+	}
+}
+.grey_box2{
+	margin:20px 0 35px 0;
+	background-color: #f7f7f7;
+	padding:15px 0 15px 25px;
+	font-size: 15px;
+	input {
+		vertical-align: top;
+		width: 17px;
+		height: 17px;
+		margin: 0 3px 0 0;
+	}
+	input + label {
+	  cursor: pointer;
+	}
+	input:not(checked) {
+	  position: absolute;
+	  opacity: 0;
+	}
+	input:not(checked) + label {
+		position: relative;
+		padding: 0 0 0 35px;
+	}
+	input:not(checked) + label:before {
+	  	content: '';
+	  	position: absolute;
+		top: 0px;
+		left: 0;
+		width: 17px;
+		height: 17px;
+		border: 2px solid #cccccc;
+		background: #ffffff;
+		background: linear-gradient(to bottom, #ffffff 0%, #cccccc 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 );
+	}
+	input:not(checked) + label:after {
+	 	opacity: 0;
+		content: '';
+		position: absolute;
+		width: 8px;
+		height: 3px;
+		background: transparent;
+		top: 7px;
+		left: 6px;
+		border: 1px solid #ff9999;
+		border-top: none;
+		border-right: none;
+		transform: rotate(-45deg);
+	}
+	input:hover + label:after {
+		opacity: 0.5;
+	}
+	input:checked + label:after {
+		opacity: 1;
+	}
+	label{
+		margin-right:40px;
+	}
+	input:checked + label{
+		font-weight: bold;
+		margin-right:31px;
+	}
+}
+.payment{
+	margin-bottom:100px;
+	padding:35px 10;
+	box-shadow: 0px 0px 55px 20px #f4f4f4;
+	display:inline-block;
+	span{
+		margin:0 30px;
 	}
 }

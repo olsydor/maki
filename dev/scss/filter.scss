@@ -81,22 +81,38 @@ input[type=checkbox] {
 .filter_input input {
 	margin: 0 50px 12px 0; 
 }
+.filter__search {
+	border: 1px solid #ccc;
+	height:37px;
+	width: 193px;
+	padding: 0 10px;
+	vertical-align: top;
+	border-right: none;
+}
 label span{
 	vertical-align: text-top;
 	margin: 0px 0px 12px 20px;
 	font-size: 15px;
 	display: inline-block;
 }
-ul {
- 	display: inline-block;
-	list-style-type: none;
-}
-ul:nth-of-type(1) {
-	margin-right: 50px;
-}
-ul:nth-of-type(2) {
-	margin-bottom: 50px;
-}
-ul:nth-of-type(3) {
-	margin-right: 50px;
+.filter{
+	ul {
+	 	display: inline-block;
+		list-style-type: none;
+	}
+	ul:nth-of-type(1) {
+		margin-right: 50px;
+	}
+	ul:nth-of-type(2) {
+		margin-bottom: 50px;
+	}
+	ul:nth-of-type(3) {
+		margin-right: 50px;
+	}
+	ul:nth-of-type(4) {
+		margin-bottom: 50px;
+	}
+	.unit_title:nth-of-type(4) {
+		margin-bottom: 15px;
+	}
 }

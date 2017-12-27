@@ -4,8 +4,8 @@ html
 	body
 		include ./parts/header.pug
 		.wrapper
-			ol
-				li
+			.list
+				.list__container
 					.title Ваш заказ
 					.table
 						.table__row.clearfix
@@ -20,11 +20,9 @@ html
 								a(href="") Нежный букет из роз
 							.table__col.ver-aline 2 450 руб.
 							.table__col.ver-aline
-								a(href="#")
-									span#order_less1.icon.icon-subtract 
+								span#order_less1.icon.icon-subtract 
 								span#order_counter1.order__counter-number 1
-								a(href="#")
-									span#order_more1.icon.icon-plus
+								span#order_more1.icon.icon-plus
 							.table__col.ver-aline#order_sum1 2 450 руб.
 						.table__row.clearfix
 							.table__col.ver-aline
@@ -33,14 +31,35 @@ html
 								a(href="") Нежный букет из роз
 							.table__col.ver-aline 1 200 руб.
 							.table__col.ver-aline
-								a(href="#")
-									span#order_less2.icon.icon-subtract 
+								span#order_less2.icon.icon-subtract 
 								span#order_counter2.order__counter-number 1
-								a(href="#")
-									span#order_more2.icon.icon-plus
+								span#order_more2.icon.icon-plus
 							.table__col.ver-aline#order_sum2 1 200 руб.
 						.table__sum.clearfix
 							span.order_sum#order_total 3 650 руб. 
 							span Сумма:	
+				.list__container
+					.title Доставка
+					.grey_box
+						input.radio_delivery(type="radio",name="take_order", id="i_take")
+						label(for="i_take") Я получу заказ
+						input.radio_delivery(type="radio",name="take_order", id="she_take")
+						label(for="she_take") Отправить заказ адресату
+				.list__container
+					.title Оплата
+					.grey_box
+						input.radio_money(type="radio",name="money", id="cash")
+						label(for="cash") При получении
+						input.radio_money(type="radio",name="money", id="online")
+						label(for="online") Онлайн
+					.payment
+						a(href="#")
+							span.icon.icon-web-money
+						a(href="#")
+							span.icon.icon-yandex-money
+						a(href="#")
+							span.icon.icon-qiwi
+						a(href="#")
+							span.icon.icon-visa 
 
 		script(src="js/main.js")
