@@ -117,3 +117,11 @@ $("#order_less2").click(function(){
     $("#order_counter2").text(howMany2);
     $("#order_sum2").text(howMany2*1200 + " руб.");
 });
+$("#online").on("click", function(){
+    $(".payment").toggleClass("payment__active");
+    $(".payment__active").css("display","inline-block")
+});
+$("#cash").on("click", function(){
+    $('.payment__active').removeClass('payment__active').addClass('payment');
+    $(".payment").css("display","none")
+});

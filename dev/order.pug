@@ -41,17 +41,21 @@ html
 				.list__container
 					.title Доставка
 					.grey_box
-						input.radio_delivery(type="radio",name="take_order", id="i_take")
-						label(for="i_take") Я получу заказ
-						input.radio_delivery(type="radio",name="take_order", id="she_take")
-						label(for="she_take") Отправить заказ адресату
+						.input_radio
+							input.radio_delivery(type="radio",name="take_order", id="i_take")
+							label(for="i_take") Я получу заказ
+						.input_radio
+							input.radio_delivery(type="radio",name="take_order", id="she_take")
+							label(for="she_take") Отправить заказ адресату
 				.list__container
 					.title Оплата
 					.grey_box
-						input.radio_money(type="radio",name="money", id="cash")
-						label(for="cash") При получении
-						input.radio_money(type="radio",name="money", id="online")
-						label(for="online") Онлайн
+						.input_radio
+							input.radio_money(type="radio",name="money", id="cash")
+							label(for="cash") При получении
+						.input_radio
+							input.radio_money(type="radio",name="money", id="online")
+							label(for="online") Онлайн
 					.payment
 						a(href="#")
 							span.icon.icon-web-money
@@ -61,5 +65,7 @@ html
 							span.icon.icon-qiwi
 						a(href="#")
 							span.icon.icon-visa 
+					.make_order-container
+						a.btn-pink.make_order(href="#") сделать заказ
 
 		script(src="js/main.js")
